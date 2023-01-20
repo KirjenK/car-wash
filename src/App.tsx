@@ -1,7 +1,11 @@
+import Navbar from './components/Navbar/Navbar';
+import MainBox from './components/MainBox/MainBox';
+
 function App():JSX.Element {
   return (
     <div className="App">
-      Hello
+      <Navbar />
+      <MainBox />
     </div>
   );
 }

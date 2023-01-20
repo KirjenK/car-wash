@@ -1,0 +1,65 @@
+.wrapper {
+  margin-top: 2rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 56rem;
+  height: 20rem;
+  justify-content: space-between;
+}
+
+.slider {
+  width: 35.25rem;
+  height: 25rem;
+}
+
+.info {
+  width: 20.25rem;
+  height: 30rem;
+  background-color: rgb(255, 255, 255);
+  border: 1.2px solid #E2E2E2;
+}
+
+.adressDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #90268F;
+  height: 2rem;
+}
+
+.adressDiv h3 {
+  color: white;
+  text-align: center;
+  font-size: 15px
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts h4 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.contacts p {
+  width: 85%;
+  margin-left: 1rem;
+  margin-top: 0rem;
+  font-size: 14px;
+  padding-bottom: 0.3rem;
+  border-bottom: 1.5px solid #f1f1f1;
+}
+
+.contacts img {
+  height: 0.7rem;
+}
+
+.contacts span {
+  margin-left: 0.5rem;
+}
