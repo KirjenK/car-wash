@@ -13,8 +13,8 @@ export default function Navbar(): JSX.Element {
           <Link className={styles.navMenu} to="/"> Главная </Link>
           <Link className={styles.navMenu} to="/detailing"> Детейлинг </Link>
           <Link className={styles.navMenu} to="/loyality"> Программа лояльности </Link>
-          <Link className={styles.navMenu} to="/loyality"> Контакты </Link>
-          <Link className={styles.navMenu} to="/loyality"> О компании </Link>
+          <Link className={styles.navMenu} to="/contacts"> Контакты </Link>
+          <Link className={styles.navMenu} to="/about"> О компании </Link>
         </div>
     </header>
   );

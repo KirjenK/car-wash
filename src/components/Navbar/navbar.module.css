@@ -9,9 +9,14 @@
   width: 8rem;
 }
 
+.logo:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
 .logoDiv {
   margin-left: auto;
-  margin-right: 10rem;
+  margin-right: 20rem;
 }
 
 .navMenuDiv {
@@ -25,7 +30,7 @@
   font-size: 15px;
 }
 
-@media (max-width: 775px) {
+@media (max-width: 931px) {
   .logoDiv {
     margin-left: 0px;
     margin-right: 0px;
