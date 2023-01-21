@@ -1,0 +1,57 @@
+import styles from './priceBox.module.css';
+
+export default function PriceBox():JSX.Element {
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.descriprtionBox}>
+        <h2>УСЛУГИ И ЦЕНЫ</h2>
+        <h3>НАЖМИТЕ НА ПРОГРАММУ МОЙКИ ВЫДЕЛЕННУЮ ЦВЕТОМ</h3>
+      </div>
+ {/* Here =>>>> */}
+      <div className={styles.washPricesBox}>
+         <div className={styles.countBox}>
+            <div className={styles.titleFlexMain}>
+              <div className={styles.title}>Наименование</div>
+              <div className={styles.border}>Без скидки</div>
+              <div className={styles.priceWithDiscount}>10%</div>
+            </div>
+         </div>
+         <div className={styles.countBox}>
+            <div className={styles.titleFlex}>
+              <div className={styles.title}><button type="button">ЭКСПРЕСС</button></div>
+              <div className={styles.border}>560 ₽</div>
+              <div className={styles.priceWithDiscount}>550 ₽</div>
+            </div>
+         </div>
+         <div className={styles.countBox}>
+            <div className={styles.titleFlex}>
+              <div className={styles.title}><button type="button">КОМФОРТ</button></div>
+              <div className={styles.border}>610 ₽</div>
+              <div className={styles.priceWithDiscount}>550 ₽</div>
+            </div>
+         </div>
+         <div className={styles.countBox}>
+            <div className={styles.titleFlex}>
+              <div className={styles.title}><button type="button">ЭКСТРА</button></div>
+              <div className={styles.border}>680 ₽</div>
+              <div className={styles.priceWithDiscount}>660 ₽</div>
+            </div>
+         </div>
+         <div className={styles.countBox}>
+            <div className={styles.titleFlex}>
+              <div className={styles.title}><button type="button">ИНТЕНСИВ</button></div>
+              <div className={styles.border}>750 ₽</div>
+              <div className={styles.priceWithDiscount}>675 ₽</div>
+            </div>
+         </div>
+         <div className={styles.countBox}>
+            <div className={styles.titleFlex}>
+              <div className={styles.title}><button type="button">ПРЕМИУМ</button></div>
+              <div className={styles.border}>850 ₽</div>
+              <div className={styles.priceWithDiscount}>765 ₽</div>
+            </div>
+         </div>
+      </div>
+    </div>
+  );
+}
