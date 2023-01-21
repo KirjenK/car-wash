@@ -1,0 +1,147 @@
+.wrapper {
+  margin-top: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 56rem;
+  border: 1.2px solid #E2E2E2;
+}
+
+.wrapper:hover {
+  -webkit-box-shadow: 2px 3px 27px 3px rgba(122, 122, 122, 0.18);
+  -moz-box-shadow: 2px 3px 27px 3px rgba(122, 122, 122, 0.18);
+  box-shadow: 2px 3px 27px 3px rgba(122, 122, 122, 0.18);
+}
+
+.mainText {
+  margin-top: 2rem;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.arrowBox {
+  position: relative;
+
+  width: 5rem;
+  height: 5rem;
+  background-color: rgba(145, 39, 143)
+}
+
+.flexLeftBox {
+  display: flex;
+  align-items: center;
+}
+
+.menuFlex {
+  align-items: center;
+  font-size: 17px;
+  margin-top: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.arrow {
+  position: absolute;
+  left: 2rem;
+  top: 1.4rem;
+  width: 10px;
+  height: 10px;
+  border-top: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  margin-right: 60px;
+  transform: rotate(135deg);
+}
+
+.arrow2 {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  width: 10px;
+  height: 10px;
+  border-top: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
+  margin-right: 60px;
+  transform: rotate(135deg);
+}
+
+.boxDescription {
+  margin-left: 1rem;
+}
+
+i {
+  font-weight: 900;
+}
+
+.giftCardBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  width: 26rem;
+}
+
+.btnGift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  background-color: black;
+  width: 6rem;
+  height: 4rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+
+}
+
+.cardName {
+  margin-top: 0.5rem;
+  color: rgba(145, 39, 143)
+}
+.cardPrice {
+  font-size: 25px;
+  margin: 0;
+  color:white
+}
+
+.btnRub {
+  background-color: white;
+  font-size: 25px;
+  margin-top: 0.8rem;
+  border: none;
+  width: 7rem;
+  height: 2.5rem;
+  border: 1px solid black;
+}
+
+.rubPrice {
+  margin-left: 2rem;
+}
+
+.imgCard {
+  height: 16rem;
+  margin-left: 0rem;
+}
+
+.border {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  height: 16.5rem;
+  border-left: 4px solid rgba(145, 39, 143)
+
+}
+
+.flexBox {
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  font-size: 12px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+sup {
+  color: red;
+}
+
+/* wrapper 56 -2(left) = 54  */

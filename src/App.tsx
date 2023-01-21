@@ -1,12 +1,17 @@
 import Navbar from './components/Navbar/Navbar';
 import MainBox from './components/MainBox/MainBox';
+import PriceBox from './components/PriceBox/PriceBox';
+import './app.css';
+import GiftBox from './components/GiftBox/GiftBox';
 
 function App():JSX.Element {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <MainBox />
-    </div>
+      <PriceBox />
+      <GiftBox />
+    </>
   );
 }
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Carousel } from 'react-carousel-minimal';
 
 import img1 from './images/img1.jpeg';
