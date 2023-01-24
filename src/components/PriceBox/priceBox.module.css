@@ -42,7 +42,9 @@
 
 .titleFlex:hover {
   background-color: rgb(206, 204, 204, 0.4);
-  border-radius: 10px;
+  border-radius: 3px;
+  outline: solid 1px rgba(137, 135, 135, 0.3); ;
+
 }
 
 .titleFlexMain {
