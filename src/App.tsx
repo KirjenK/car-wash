@@ -5,6 +5,8 @@ import './app.css';
 import GiftBox from './components/GiftBox/GiftBox';
 import LoyalityBox from './components/LoyalityBox/LoyalityBox';
 import WarnongBlock from './components/WarningBlock/WarnongBlock';
+import YandexMap from './components/YandexMap/YandexMap';
+import Footer from './components/Footer/Footer';
 
 function App():JSX.Element {
   return (
@@ -15,6 +17,8 @@ function App():JSX.Element {
       <GiftBox />
       <LoyalityBox />
       <WarnongBlock />
+      <YandexMap />
+      <Footer />
     </>
   );
 }

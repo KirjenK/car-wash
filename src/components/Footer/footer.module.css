@@ -1,0 +1,14 @@
+.footer {
+  text-align: center;
+  width: 56rem;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.footer div {
+  font-size: 12px;
+}
+
+.footer p {
+  font-weight: 600;
+}
