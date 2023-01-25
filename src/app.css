@@ -5,6 +5,11 @@ body {
   background-color: white;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .btn1 {
   background-color: rgb(34, 165, 85)
 }
@@ -89,3 +94,32 @@ img {
 .ReactModal__Overlay {
  background-color: rgba(116, 116, 116, 0.8) !important
 }
+
+.slide-number {
+  display: none;
+}
+
+
+@media (max-width: 930px) {
+  .thumbnails
+  {
+    width: 56.5vw;
+  }
+  .thumbnails img
+  {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 660px) {
+  .thumbnails
+  {
+    display: none;
+  }
+  .thumbnails img
+  {
+    display: none;
+  }
+}
+
+

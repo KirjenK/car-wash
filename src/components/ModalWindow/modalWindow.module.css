@@ -3,8 +3,6 @@
   margin-left: 2rem;
   align-items: baseline;
   margin-top: 0.5rem;
-
-
 }
 
 .wrapper p {
@@ -24,7 +22,7 @@
   color: white !important;
   font-weight: 900;
   text-align: center;
-  width: 35rem;
+  width: 25vw;
   height: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
