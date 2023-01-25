@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import Saloon from '../Saloon/Saloon';
 import styles from './priceBox.module.css';
+import ModalWindow from '../ModalWindow/ModalWindow';
 
 export default function PriceBox():JSX.Element {
+  const [modalIsOpen, setIsOpen] = useState(false);
+  const [program, setProgram] = useState({});
+
   const [price, setPrice] = useState([
     {
       id: 1,
@@ -28,19 +32,25 @@ export default function PriceBox():JSX.Element {
     }, {
       id: 4,
       description: 'ИНТЕНСИВ',
-      price: 680,
-      discountPrice: 610,
+      price: 750,
+      discountPrice: 675,
       saloonPrice: 1340,
       discSalonPrice: 1205,
     }, {
       id: 5,
       description: 'ПРЕМИУМ',
-      price: 680,
-      discountPrice: 610,
+      price: 850,
+      discountPrice: 765,
       saloonPrice: 1440,
       discSalonPrice: 1295,
     }
   ]);
+
+  function openModal(el):void {
+    setProgram(el);
+    setIsOpen(true);
+  }
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.descriprtionBox}>
@@ -59,7 +69,9 @@ export default function PriceBox():JSX.Element {
          {price.map((item) => (
           <div key={item.id} className={styles.countBox}>
             <div className={styles.titleFlex}>
-              <div className={styles.title}><button className={`btn${item.id}`} type="button">{item.description}</button></div>
+              <div className={styles.title}>
+                <button onClick={() => openModal(item)} className={`btn${item.id}`} type="button">{item.description}</button>
+              </div>
                 <div className={styles.border}>{item.price} ₽</div>
               <div className={styles.priceWithDiscount}>{item.discountPrice} ₽</div>
             </div>
@@ -68,6 +80,8 @@ export default function PriceBox():JSX.Element {
          )}
          <Saloon price={price} />
       </div>
+      <ModalWindow program={program} modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
     </div>
+
   );
 }
