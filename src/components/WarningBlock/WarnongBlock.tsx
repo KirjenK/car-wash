@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styles from './warningBlock.module.css';
 import mainImg from './mainImg.png';
 import neutral from './neutral.png';
@@ -5,10 +6,20 @@ import infoImg1 from './infoImg1.png';
 import infoImg2 from './infoImg2.png';
 import infoImg3 from './infoImg3.png';
 import infoImg4 from './infoImg4.png';
+import featureAnimation from '../Animation/Animation';
 
 export default function WarnongBlock(): JSX.Element {
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      className={styles.wrapper}
+      transition={{
+      duration: 0.85,
+    }}
+      initial="hidden"
+      whileInView="visible"
+      variants={featureAnimation}
+      viewport={{ amount: 0, once: true }}
+    >
       <h2>ВНИМАНИЕ!</h2>
       <h3>Необходимо соблюдать следующие правила!</h3>
       <div className={styles.mainImgBlock}>
@@ -43,6 +54,6 @@ export default function WarnongBlock(): JSX.Element {
           <p>В тоннеле нельзя помыться с открытым багажником для пикапа (без крышки).</p>
           <p>Дополнительную информацию можно получить по телефону +7 (812) 523-42-33</p>
       </div>
-    </div>
+    </motion.div>
   );
 }

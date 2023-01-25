@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import Saloon from '../Saloon/Saloon';
 import styles from './priceBox.module.css';
 import ModalWindow from '../ModalWindow/ModalWindow';
+
+import featureAnimation from '../Animation/Animation';
 
 export default function PriceBox():JSX.Element {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -52,7 +55,16 @@ export default function PriceBox():JSX.Element {
   }
 
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      className={styles.wrapper}
+      transition={{
+      duration: 0.7,
+    }}
+      initial="hidden"
+      whileInView="visible"
+      variants={featureAnimation}
+      viewport={{ amount: 0, once: true }}
+    >
       <div className={styles.descriprtionBox}>
         <h2>УСЛУГИ И ЦЕНЫ</h2>
         <h3>НАЖМИТЕ НА ПРОГРАММУ МОЙКИ ВЫДЕЛЕННУЮ ЦВЕТОМ</h3>
@@ -81,7 +93,7 @@ export default function PriceBox():JSX.Element {
          <Saloon price={price} />
       </div>
       <ModalWindow program={program} modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
-    </div>
+    </motion.div>
 
   );
 }

@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -68,4 +68,96 @@
 
 .contacts span {
   margin-left: 0.5rem;
+}
+
+.includeChar {
+  padding-right: 0.2rem;
+  color: #53a9dc;
+}
+
+.includeChar:hover {
+  color: black;
+}
+
+.imgWrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.imgWrapper img {
+  width: 10rem;
+  transform: scale(-1, 1);
+  opacity: 0.8;
+}
+
+.imgWrapper img:hover {
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+
+
+
+@media (max-width: 930px) {
+  .wrapper {
+    width: 93.5vw;
+  }
+
+  .slider {
+    width: 56.5vw;
+    height: auto;
+  }
+
+  .info {
+    width: 36vw;
+    height: 24.7rem;
+  }
+
+  .adressDiv h3 {
+    font-size: 11px
+  }
+
+  .contacts h4 {
+    font-size: 12px;
+  }
+
+  .contacts p {
+    font-size: 11px;
+  }
+
+  .imgWrapper img {
+    width: 8rem;
+  }
+}
+
+
+
+@media (max-width: 660px) {
+  .slider {
+    width: 50vw;
+  }
+
+  .info {
+    width: 42.5vw;
+  }
+
+  .wrapper {
+    height: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .slider {
+    width: 93.5vw;
+  }
+
+  .info {
+    width: 93.5vw;
+    margin-bottom: 1rem;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
 }

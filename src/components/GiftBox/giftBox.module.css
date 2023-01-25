@@ -1,5 +1,5 @@
 .wrapper {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   width: 56rem;
@@ -75,6 +75,7 @@ i {
   flex-wrap: wrap;
   margin-top: 1.5rem;
   width: 26rem;
+  display: row;
 }
 
 .btnGift {
@@ -87,17 +88,17 @@ i {
   height: 4rem;
   border-radius: 10px;
   margin-bottom: 1rem;
-
 }
 
 .cardName {
   margin-top: 0.5rem;
   color: rgba(145, 39, 143)
 }
+
 .cardPrice {
   font-size: 25px;
   margin: 0;
-  color:white
+  color: white
 }
 
 .btnRub {
@@ -124,10 +125,14 @@ i {
   margin-left: 2rem;
   height: 16.5rem;
   border-left: 4px solid rgba(145, 39, 143)
+}
 
+.borderMobile {
+  display: none;
 }
 
 .flexBox {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -143,4 +148,95 @@ sup {
   color: red;
 }
 
-/* wrapper 56 -2(left) = 54  */
+.btnFlexBoxWrap {
+  display: flex;
+}
+
+.onlyMobile {
+  display: none;
+}
+
+@media (max-width: 930px) {
+  .wrapper {
+    width: 93.5vw;
+  }
+
+  .title {
+    padding-right: 0vw;
+    margin-right: auto;
+  }
+
+  .countBox {
+    width: 87vh;
+  }
+
+  .titleFlex {
+    width: 87vw;
+  }
+
+  .titleFlexMain {
+    width: 85.5vw;
+  }
+}
+
+@media (max-width: 930px) {
+  .imgCard {
+    height: 23vh;
+  }
+}
+
+@media (max-width: 790px) {
+  .imgCard {
+    height: 23vh;
+    margin-left: 2.7rem;
+
+  }
+
+  .flexBox {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .border {
+    display: none;
+  }
+
+  .borderMobile {
+    position: absolute;
+    top: 0;
+    left: 2.4rem;
+    display: block;
+    width: 0.3rem;
+    height: 20.29rem;
+    background-color: rgba(145, 39, 143)
+  }
+
+  .menuFlex {
+    margin-top: 0;
+  }
+
+  .mainText {
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+
+  .info {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .giftCardBox {
+    display: none;
+  }
+  .onlyMobile {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .mobileBtnDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
