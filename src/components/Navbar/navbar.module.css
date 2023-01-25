@@ -21,13 +21,25 @@
 
 .navMenuDiv {
   margin-right: auto
-} 
+}
 
 .navMenu {
   margin-right: 0.5rem;
   text-decoration: none;
   color: #6b6b6b;
   font-size: 15px;
+  text-decoration: none;
+  background-image: linear-gradient(#90268F, #90268F);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 5px;
+  transition: .4s;
+  padding-bottom: 3px;
+}
+
+.navMenu:hover {
+  background-size: 100% 2px;
+  color: black;
 }
 
 @media (max-width: 984px) {
@@ -35,7 +47,8 @@
     margin-left: 0px;
     margin-right: 0px;
   }
-  .navMenuDiv{
+
+  .navMenuDiv {
     margin-right: 0px;
   }
 }

@@ -1,0 +1,105 @@
+.wrapper {
+  display: flex;
+  margin-left: 2rem;
+  align-items: baseline;
+  margin-top: 0.5rem;
+
+
+}
+
+.wrapper p {
+  margin-bottom: 0rem;
+  font-weight: 900;
+  margin-top: 0.3rem;
+  border-bottom: 1px solid #dddddd;
+  padding-bottom: 0.3rem;
+  font-size: 11px;
+}
+.h2 {
+  margin-left: 2rem;
+  margin-bottom: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  font-weight: 900;
+  text-align: center;
+  width: 35rem;
+  height: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 3px;
+}
+
+.leftFlex {
+  margin-right: 0.5rem;
+  width: 65vh;
+}
+.rightFlex {
+  margin-left: 0.5rem;
+  margin-right: 2rem;
+  width: 65vh;
+}
+
+.closeBtn {
+  position: absolute;
+  font-size: 15px;
+  height: 1.5rem;
+  width: 1.5rem;
+  top: 0.1rem;
+  right: 0.1rem;
+  border: none;
+  background-color: #992097;
+  color: white;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+.includeChar {
+  padding-right: 0.2rem;
+  color: #53a9dc;
+}
+
+.includeChar:hover {
+  color: black;
+}
+
+.wrapper h3 {
+  font-weight: 900;
+  font-size: 16px;
+}
+
+.bottomFlex {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 23px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.bottomFlex p:first-child {
+  margin-top: 0.7rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.bottomFlex p:last-child {
+  margin-top: 0.7rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: yellow;
+  padding-bottom: 0.3rem;
+  padding-top: 0.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.modalFooter {
+font-size: 15px;
+margin-top: 0;
+text-align: center;
+margin-bottom: 0;
+}

@@ -2,7 +2,9 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: white;
 }
+
 .btn1 {
   background-color: rgb(34, 165, 85)
 }
@@ -82,4 +84,8 @@ img {
   background-color: transparent !important;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.ReactModal__Overlay {
+ background-color: rgba(116, 116, 116, 0.8) !important
 }
