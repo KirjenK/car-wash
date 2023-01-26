@@ -10,8 +10,8 @@ export default function ModalWindow({ modalIsOpen, setIsOpen, program }): JSX.El
 
   const customStyles = {
     content: {
-      width: '70vw',
-      height: '45vh',
+      width: '75vw',
+      height: 'auto',
       top: '50%',
       left: '50%',
       right: 'auto',
@@ -38,9 +38,11 @@ export default function ModalWindow({ modalIsOpen, setIsOpen, program }): JSX.El
         contentLabel="Example Modal"
         className={styles.test}
       >
+
           <h2 className={`${styles.h2} btn${currentClickedProgramm?.id}`} ref={(_subtitle) => (subtitle = _subtitle)}>
           <span>{currentClickedProgramm?.description}</span>
           </h2>
+
          <button className={styles.closeBtn} onClick={closeModal}>X</button>
          <div className={styles.wrapper}>
            <div className={styles.leftFlex}>
@@ -87,7 +89,7 @@ export default function ModalWindow({ modalIsOpen, setIsOpen, program }): JSX.El
            {currentClickedProgramm?.notInclude1 ? (
              <>
              <h3>Не входит в тариф</h3>
-           <p>{currentClickedProgramm?.notInclude1}</p>
+           <p className={styles.firstPRightFlex}>{currentClickedProgramm?.notInclude1}</p>
            <p>{currentClickedProgramm?.notInclude2}</p>
 
            {currentClickedProgramm?.notInclude3 ? (

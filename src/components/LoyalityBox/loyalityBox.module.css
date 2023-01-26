@@ -1,7 +1,7 @@
 .wrapper {
   width: 56rem;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border: 1.2px solid #E2E2E2;
 }
 
@@ -100,5 +100,8 @@
 @media (max-width: 550px) {
   .flexWrapper img {
     height: 9rem;
+  }
+  .wrapper h2 {
+    font-size: 17px;
   }
 }
