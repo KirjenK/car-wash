@@ -23,7 +23,7 @@ export default function MainBox(): JSX.Element {
         </div>
         <div className={styles.contacts}>
           <h4>Контакты</h4>
-          <p> <img src={person} alt="person-logo" /> <span>Управляющий: Кириченко Кирилл</span></p>
+          <p className={styles.firstP}> <img src={person} alt="person-logo" /> <span>Управляющий: Кириченко Кирилл</span></p>
           <p> <img src={siteLogo} alt="site-logo" /> <span>Сайт: bumblebee.carwash.ru </span></p>
           <p> <img src={tel} alt="tel-logo" /> <span>Телефон: +7 (812) 523-42-33</span> </p>
           <p> <img src={email} alt="email-logo" /><span> E-mail: info@bumblebee.ru</span></p>

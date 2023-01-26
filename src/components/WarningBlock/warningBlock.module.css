@@ -23,6 +23,7 @@ h3 {
 
 .wrapper h3 {
   margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 21px;
   color: red;
 }
@@ -81,14 +82,16 @@ h3 {
 }
 
 .infoBlock {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-left: 7rem;
   margin-right: 7rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 .infoBlock h4 {
   font-weight: 900;
+  margin-bottom: 0.5rem;
 }
 
 .infoBlock span {
@@ -104,6 +107,97 @@ h3 {
 }
 
 .infoBlock p:last-child {
+  margin-top: 1.5rem;
+  text-align: center;
   font-size: 900;
   font-weight: bold;
+  font-size: 12px;
+}
+
+@media (max-width: 930px) {
+  .wrapper {
+    width: 93.5vw;
+  }
+  .wrapper h2 {
+    font-size: 20px;
+  }
+  .wrapper h3 {
+    font-size: 18px;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 880px) {
+  .mainImgBlock {
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+  }
+  .neutralImg {
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+  .smallImgBlock {
+    margin-top: 0.5rem;
+    width: 65vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .smallImgBlock img:nth-child(2) {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .smallImgBlock img:nth-child(4) {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .mainImg {
+    width: 70vw;
+    height: auto;
+  }
+  .mainImgBlock {
+    margin: auto;
+  }
+  .neutralImg {
+    width: 25vw;
+    height: auto;
+  }
+  .smallImgBlock img {
+    width: 25vw;
+    height: auto;
+  }
+  .smallImgBlock {
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+  .smallImgBlock img:nth-child(2) {
+    margin-left: 0.5rem;
+    margin-right: 0rem;
+  }
+  .smallImgBlock img:nth-child(4) {
+    margin-top: 0rem;
+  }
+  .smallImgBlock img:nth-child(3) {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .smallImgBlock img:nth-child(4) {
+    margin-top: 0.5rem;
+  }
+  .infoBlock {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    font-size: 14px
+  }
+  .infoBlock p {
+    font-size: 12px;
+  }
+  .infoBlock p:last-child {
+    font-size: 12px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
