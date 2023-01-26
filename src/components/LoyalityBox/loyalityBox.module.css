@@ -32,13 +32,15 @@
 .infoWrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .infoWrapper h4 {
   font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .pInfo {
@@ -47,7 +49,7 @@
 
 .moreInfo {
   font-size: 13px;
-  margin-top: 0px;
+  margin-top: 0.5rem;
 }
 
 .btnMore {
@@ -67,6 +69,36 @@
   transition: 0.3s;
 }
 
-.infoWrapper {
-  margin-right: 2rem;
+@media (max-width: 930px) {
+  .wrapper {
+    width: 93.5vw;
+  }
+  .wrapper h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 880px) {
+  .flexWrapper {
+    flex-direction: column;
+  }
+  .pInfo {
+    text-align: center;
+  }
+  .moreInfo {
+    text-align: center;
+  }
+  .infoWrapper h4 {
+    margin-top: 1rem;
+  }
+  .flexWrapper img {
+    height: 14rem;
+    margin-left: 0rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .flexWrapper img {
+    height: 9rem;
+  }
 }

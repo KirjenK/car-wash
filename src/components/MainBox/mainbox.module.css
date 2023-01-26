@@ -56,11 +56,16 @@
 .contacts p {
   width: 85%;
   margin-left: 1rem;
-  margin-top: 0rem;
+  margin-top: 0.2rem;
   font-size: 14px;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.25rem;
   border-bottom: 1.5px solid #f1f1f1;
 }
+
+.contacts .firstP {
+  margin-top: 0rem;
+}
+
 
 .contacts img {
   height: 0.7rem;
@@ -125,9 +130,11 @@
   .contacts p {
     font-size: 11px;
   }
-
+  
   .imgWrapper img {
-    width: 8rem;
+    width: 7rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
   }
 }
 
