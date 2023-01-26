@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
   border: 1.2px solid #E2E2E2;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
   width: 56rem;
@@ -194,10 +194,26 @@ h3 {
   }
   .infoBlock p {
     font-size: 12px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .infoBlock p:last-child {
     font-size: 12px;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .infoBlock h4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .wrapper h2 {
+    font-size: 17px;
+  }
+
+  .wrapper h3 {
+    font-size: 16px;
   }
 }

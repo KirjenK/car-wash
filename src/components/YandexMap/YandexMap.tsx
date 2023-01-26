@@ -29,15 +29,13 @@ export default function YandexMap(): JSX.Element {
         properties={{
           iconContent: 'Bumblebee', // название
           hintContent: '<em>Подробная инфа по клику</em>',
-          balloonContent: `<div class="my-balloon">
+          balloonContent: `<section class="my-balloon">
           <h4>Bumblebee car wash</h4>
-          <div>
-          Санкт-Петербург,
-          Невский проспект, д.66-68
+          <p> Санкт-Петербург </p>
+          <p> Невский проспект, д.66-68 </p>
           <p>Режим работы: 24 часа</p>
-          <p>Телефон: +7 (812) 523-42-33</p>
-          </div>
-        </div>`
+          <p class="telephoneNumber">Тел: +7 (812) 523-42-33</p>
+        </section>`
         }}
       />
       </Map>

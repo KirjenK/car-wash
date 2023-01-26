@@ -26,14 +26,14 @@ export default function MainBox(): JSX.Element {
           <p className={styles.firstP}> <img src={person} alt="person-logo" /> <span>Управляющий: Кириченко Кирилл</span></p>
           <p> <img src={siteLogo} alt="site-logo" /> <span>Сайт: bumblebee.carwash.ru </span></p>
           <p> <img src={tel} alt="tel-logo" /> <span>Телефон: +7 (812) 523-42-33</span> </p>
-          <p> <img src={email} alt="email-logo" /><span> E-mail: info@bumblebee.ru</span></p>
+          <p> <img src={email} alt="email-logo" /><span> E-mail:<a className={styles.emailWrite} href="mailto:info@bumblebee.ru"> Написать нам</a></span></p>
           <p> <img src={clock} alt="clock-logo" /><span> Время работы: 24 часа</span></p>
           <p> <img src={location} alt="adress-logo" /><span> г. Спб, Невский пр-кт, д. 66</span></p>
         </div>
         <div className={styles.contacts}>
        <h4>Услуги</h4>
        <p><span className={styles.includeChar}>✓</span>
-       Автомойка кузова со скоростью от 50 автомобилей в час
+       Автомойка кузова
        </p>
        <p><span className={styles.includeChar}>✓</span>Уборка салона (с 08:00 до 00:00)</p>
        <p><span className={styles.includeChar}>✓</span>Детейлинг (с 09:00 до 21:00)</p>

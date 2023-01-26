@@ -11,4 +11,15 @@
 
 .footer p {
   font-weight: 600;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 930px) {
+  .footer {
+    width: 93vw;
+  }
+  .footer p {
+    font-size: 14px;
+  }
 }

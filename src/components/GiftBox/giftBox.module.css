@@ -220,12 +220,18 @@ sup {
 
   .mainText {
     margin-bottom: 1rem;
-    font-size: 16px;
+    /* font-size: 16px; */
   }
 
   .info {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .mainText {
+    font-size: 17px;
   }
 }
 

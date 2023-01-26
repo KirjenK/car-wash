@@ -67,18 +67,24 @@ img {
 }
 
 .my-balloon {
-  width: 20em;
-  padding: 1em 4em 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18vw;
   border-radius: 0.5em;
+  height: auto;
 }
 
 .my-balloon h4 {
+  margin-top: 0.5rem;
+}
+
+.my-balloon p:last-child {
   margin-bottom: 0.5rem;
 }
 
-.my-balloon p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.telephoneNumber {
+  color: #b51fff;
 }
 
 .ymaps-2-1-79-balloon {
@@ -99,7 +105,6 @@ img {
   display: none;
 }
 
-
 @media (max-width: 930px) {
   .thumbnails
   {
@@ -108,6 +113,49 @@ img {
   .thumbnails img
   {
     width: 10vw;
+  }
+  .ymaps-2-1-79-map {
+    width: 86vw !important;
+    height: auto;
+  }
+  .my-balloon {
+    width: 38vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .my-balloon p:last-child {
+    margin-bottom: 0.5rem;
+  }
+  .ymaps-2-1-79-balloon {
+    width: 45vw !important;
+  }
+  
+  .my-balloon h4 {
+    margin-bottom: 0rem;
+    margin-top: 0.2rem;
+  }
+  
+  .my-balloon p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .ymaps-2-1-79-balloon {
+    box-shadow: none !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .my-balloon h4 {
+    font-size: 13px;
+  }
+  
+  .my-balloon p {
+    font-size: 12px;
   }
 }
 
@@ -120,6 +168,22 @@ img {
   {
     display: none;
   }
+}
+
+@media (max-width: 400px) {
+
+   .my-balloon h4 {
+    font-size: 11px;
+  }
+  
+  .my-balloon p {
+    font-size: 9px;
+    margin-bottom: 0rem;
+  } 
+  .my-balloon p:last-child {
+    margin-bottom: 0;
+  } 
+  
 }
 
 
