@@ -20,6 +20,7 @@
 }
 
 .navMenuDiv {
+  display: flex;
   margin-right: auto
 }
 
@@ -46,14 +47,14 @@
   color: black;
 }
 
-@media (max-width: 984px) {
+@media (max-width: 1000px) {
   .logoDiv {
     margin-left: 0px;
     margin-right: 0px;
   }
 
   .navMenuDiv {
-    margin-right: 0px;
+    margin-right: 5px;
   }
 }
 
@@ -64,7 +65,7 @@
 
 }
 
-@media (max-width: 528px) {
+@media (max-width: 540px) {
   .wrapper {
     flex-direction: row;
     justify-content: center;
