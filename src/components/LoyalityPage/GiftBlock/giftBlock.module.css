@@ -109,7 +109,7 @@
   font-weight: 900;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   width: 6.5rem;
   height: 3rem;
   border: 1px solid black;
@@ -142,6 +142,12 @@
   margin-top: 0.3rem;
   font-size: 14px;
 }
+
+.footerBlock .firstP {
+  margin-top: 0.5rem 
+}
+
+
 
 @media (max-width: 690px) {
   .h2 {

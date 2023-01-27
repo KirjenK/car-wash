@@ -61,7 +61,7 @@ export default function GiftBlock():JSX.Element {
               тоннельной мойки, конвейерной уборки
                салона, детейлинга, кроме:
           </h3>
-          <p>- Товары и продукция кафе</p>
+          <p className={styles.firstP}>- Товары и продукция кафе</p>
           <p>- Защита дисков Autosol Ceramic Coating</p>
           <p>- Ceramic coating Autosol</p>
           <p>- Комплексная предпродажная подготовка автомобилей</p>

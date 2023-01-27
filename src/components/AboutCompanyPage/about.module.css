@@ -1,0 +1,149 @@
+
+.wrapper {
+  background-color: #e2e2e2;
+  height: 12rem;
+}
+
+.centerWrapper img {
+  display: none;
+}
+
+.imgWrapper {
+  width: 100vw;
+  height: 12rem;
+  background-color: #e2e2e2;
+  background-image: url('./carMB.png');
+  background-position: center right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  opacity: 40%;
+}
+
+.centerWrapper {
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.7rem;
+  width: 61rem;
+  height: 12rem;
+  padding-bottom: 0rem;
+}
+
+.aboutCompany {
+  display: flex;
+  align-items: flex-end;
+}
+
+.leftWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.9rem;
+  width: 35vw;
+}
+
+.leftWrapper h1 {
+  font-size: 25px;
+}
+
+.leftWrapper p {
+  font-size: 21px;
+  letter-spacing: 2px;
+}
+
+.leftWrapper span {
+  margin-top: 0.5rem;
+  font-size: 17px;
+}
+
+.leftWrapper div {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: #90268F;
+}
+
+@media (max-width: 768px) {
+  .aboutCompany h1 {
+    font-size: 20px;
+  }
+  .aboutCompany p {
+    font-size: 16px;
+  }
+  .aboutCompany span {
+    font-size: 14px;
+  }
+  .leftWrapper {
+    padding-top: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgWrapper {
+    display: none;
+    height: 11rem;
+  }
+  .wrapper {
+    height: 11rem;
+  }
+  .leftWrapper  {
+    align-items: center;
+    padding-top: 0rem;
+    align-items: flex-start;
+  }
+  .centerWrapper img {
+    display: block;
+    width: auto;
+    height: 11rem;
+    opacity: 40%;
+    margin-left: 0vw
+  } 
+  .aboutCompany h1 {
+    font-size: 14px;
+    margin-bottom: 0.3rem;
+  }
+  .aboutCompany p {
+    font-size: 12px;
+  }
+  .aboutCompany span {
+    font-size: 10px;
+  }
+  .aboutCompany {
+    padding-top: 0;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .leftWrapper  {
+    position: relative;
+    height: auto;
+    width: auto;
+   
+  }
+  .leftWrapper img {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 472px) {
+  .leftWrapper {
+    align-items: flex-start;
+  }
+  .aboutCompany h1 {
+    font-size: 14px;
+  }
+  .aboutCompany p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  
+}
