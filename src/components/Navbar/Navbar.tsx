@@ -12,7 +12,7 @@ export default function Navbar(): JSX.Element {
           <Link className={styles.navMenu} to="/"> Главная </Link>
           <Link className={styles.navMenu} to="/detailing"> Детейлинг </Link>
           <Link className={styles.navMenu} to="/loyality"> Программа лояльности </Link>
-          <Link className={styles.navMenu} to="/contacts"> Контакты </Link>
+            <a className={styles.navMenu} href="tel:+78125234233">Позвонить нам</a>
           <Link className={`${styles.navMenu} ${styles.navMenuLast}`} to="/about"> О компании </Link>
         </div>
     </header>
