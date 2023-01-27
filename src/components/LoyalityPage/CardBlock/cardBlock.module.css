@@ -1,0 +1,118 @@
+.wrapper {
+  max-width: 45rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+
+
+.topSection h2 {
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+
+.topSection p {
+  font-size: 15px;
+}
+
+.cardSection {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1.5rem;
+  border: 1.2px solid #E2E2E2;
+  border-radius: 10px;
+}
+
+.topCardSectionFlex {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topCardSectionFlex h3 {
+  width: 15rem;
+}
+
+.topCardSectionFlex div {
+  font-size: 24px;
+  font-weight: 900;
+  background-color: #a342e0;
+  height: 3rem;
+  width: 4rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.midSection {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.midSection img {
+  border-radius: 12px;
+  width: 16rem;
+  margin-right: 0.5rem;
+}
+
+.midSection div {
+  margin-left: 0.5rem ;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.cardPrice {
+  font-weight: 900;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cardPrice span {
+  color: #a342e0;
+}
+
+.topCardSectionFlex h3 {
+  text-align: left;
+}
+
+@media (max-width: 580px) {
+  .midSection {
+    flex-direction: column
+  }
+  .midSection div {
+    margin-top: 1rem;
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .midSection img {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .topSection h2, .topCardSectionFlex h3 {
+    font-size: 17px;
+  }
+  .topSection p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .midSection img {
+    width: 60vw;
+  }
+  .topSection h2, .topCardSectionFlex h3 {
+    font-size: 15px;
+  }
+  .topSection p, .midSection div {
+    font-size: 13px;
+  }
+  
+}
+

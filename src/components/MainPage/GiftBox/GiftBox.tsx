@@ -1,9 +1,20 @@
+import { motion } from 'framer-motion';
 import styles from './giftBox.module.css';
 import giftCard from './giftCard.png';
+import featureAnimationOpacity from '../Animation/AnimationOpacity';
 
 export default function GiftBox(): JSX.Element {
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      className={styles.wrapper}
+      transition={{
+      duration: 1.5,
+    }}
+      initial="hidden"
+      whileInView="visible"
+      variants={featureAnimationOpacity}
+      viewport={{ amount: 0, once: true }}
+    >
           <div className={styles.mainText}>ПОДАРИ РАДОСТЬ УХОДА ЗА ЛЮБИМЫМ АВТОМОБИЛЕМ</div>
      <div className={styles.flexBox}>
         <div className={styles.menuFlex}>
@@ -93,6 +104,6 @@ export default function GiftBox(): JSX.Element {
      <div className={styles.info}>
      Так же Вы можете приобрести подарочный сертификат на любую желаемую сумму <sup>*</sup>
      </div>
-    </div>
+    </motion.div>
   );
 }

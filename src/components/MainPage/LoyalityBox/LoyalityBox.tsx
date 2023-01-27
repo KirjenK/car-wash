@@ -1,9 +1,21 @@
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import styles from './loyalityBox.module.css';
 import cardLoyal from './cardLoyal.png';
+import featureAnimationOpacity from '../Animation/AnimationOpacity';
 
 export default function LoyalityBox(): JSX.Element {
   return (
-    <div className={styles.wrapper}>
+    <motion.div
+      className={styles.wrapper}
+      transition={{
+      duration: 1.5,
+    }}
+      initial="hidden"
+      whileInView="visible"
+      variants={featureAnimationOpacity}
+      viewport={{ amount: 0, once: true }}
+    >
         <h2>ПРОГРАММА ЛОЯЛЬНОСТИ</h2>
         <div className={styles.flexWrapper}>
             <img src={cardLoyal} alt="cardLoyal" />
@@ -19,9 +31,9 @@ export default function LoyalityBox(): JSX.Element {
               С подробной информацией по программе лояльности,
               Вы можете ознакомиться нажав на кнопку Узнать больше
               </p>
-              <button className={styles.btnMore} type="button"> Узнать больше</button>
+           <Link to="/loyality"><button className={styles.btnMore} type="button"> Узнать больше</button></Link>
             </div>
         </div>
-    </div>
+    </motion.div>
   );
 }
