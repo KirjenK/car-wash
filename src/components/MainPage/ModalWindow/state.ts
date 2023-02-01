@@ -1,4 +1,6 @@
-const programDescription = [{
+import Program from './types/program';
+
+const programDescription: Program[] = [{
   id: 1,
   description: 'ЭКСПРЕСС',
   price: 560,

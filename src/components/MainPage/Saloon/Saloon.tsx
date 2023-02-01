@@ -1,6 +1,11 @@
+import Price from '../PriceBox/types/price';
 import styles from './saloon.module.css';
 
-export default function Saloon({ price }):JSX.Element {
+interface PriceProps {
+  price: Price[]
+}
+
+export default function Saloon({ price }: PriceProps):JSX.Element {
 const newPrice = price.filter((el) => el.saloonPrice);
   return (
     <>
