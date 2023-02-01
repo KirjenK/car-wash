@@ -1,4 +1,5 @@
 {
+  "homepage": "https://KirjenK.github.io",
   "name": "car-wash",
   "version": "0.1.0",
   "private": true,
@@ -22,6 +23,8 @@
   },
   "scripts": {
     "start": "ESLINT_NO_DEV_ERRORS=true react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -104,6 +107,7 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.1",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0"
   }
 }
