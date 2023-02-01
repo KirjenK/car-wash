@@ -47,14 +47,12 @@ export default function ModalWindow({ modalIsOpen, setIsOpen, program }
         contentLabel="Example Modal"
         className={styles.test}
       >
-
-          <h2 className={`${styles.h2} btn${currentClickedProgramm?.id}`} ref={(_subtitle) => (subtitle = _subtitle)}>
-          <span>{currentClickedProgramm?.description}</span>
-          </h2>
-
          <button className={styles.closeBtn} onClick={closeModal}>X</button>
          <div className={styles.wrapper}>
            <div className={styles.leftFlex}>
+           <h2 className={`${styles.h2} btn${currentClickedProgramm?.id}`} ref={(_subtitle) => (subtitle = _subtitle)}>
+          <span>{currentClickedProgramm?.description}</span>
+           </h2>
             <p> <span className={styles.includeChar}>✓</span> {currentClickedProgramm?.option1}</p>
             <p> <span className={styles.includeChar}>✓</span> {currentClickedProgramm?.option2}</p>
             <p> <span className={styles.includeChar}>✓</span> {currentClickedProgramm?.option3}</p>

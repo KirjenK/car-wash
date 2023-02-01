@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 /* check */
+html {
+  overflow-x: hidden
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: white;
+  overflow-x: hidden
 }
 
 * {
@@ -185,6 +189,9 @@ img {
   .my-balloon p:last-child {
     margin-bottom: 0;
   } 
+  /* .ReactModal__Content {
+    height: 65vh !important;
+  } */
   
 }
 

@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
-  align-items: baseline;
+  /* align-items: baseline; */
+  justify-content: center;
   margin-top: 0.5rem;
 }
 
@@ -10,8 +11,9 @@
   margin-top: 0.3rem;
   border-bottom: 1px solid #dddddd;
   padding-bottom: 0.3rem;
-  font-size: 11px;
+  font-size: 14px;
 }
+
 .h2 {
   margin-bottom: 0rem;
   display: flex;
@@ -20,7 +22,7 @@
   color: white !important;
   font-weight: 900;
   text-align: center;
-  width: 35vw;
+  width: 34vw;
   height: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -31,8 +33,10 @@
   margin-right: 0.5rem;
   width: 65vh;
 }
+
 .rightFlex {
-  margin-left: 1rem !important;
+  margin-top: 3rem;
+  margin-left: 1rem;
   width: 65vh;
 }
 
@@ -95,10 +99,10 @@
 }
 
 .modalFooter {
-font-size: 14px;
-margin-top: 0;
-text-align: center;
-margin-bottom: 0;
+  font-size: 14px;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .firstPRightFlex {
@@ -109,27 +113,36 @@ margin-bottom: 0;
   .bottomFlex {
     font-size: 19px;
   }
+  .wrapper p {
+    font-size: 12px;
+  }
 }
-
 
 @media (max-width: 520px) {
   .wrapper {
     flex-direction: column;
   }
+
   .wrapper p {
-    font-size: 11px;
+    font-size: 9.5px;
   }
+
   .leftFlex {
     width: auto;
   }
+
   .rightFlex {
+    margin-top: 0;
+    margin-left: 0;
     width: auto;
   }
+
   .h2 {
     margin: auto;
     width: 50vw;
   }
+
   .modalFooter {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
