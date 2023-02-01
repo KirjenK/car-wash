@@ -1,12 +1,21 @@
+import { Dispatch, SetStateAction } from 'react';
 import Modal from 'react-modal';
+import Price from '../PriceBox/types/price';
 import styles from './modalWindow.module.css';
 import state from './state';
 
 Modal.setAppElement('#root');
 
-export default function ModalWindow({ modalIsOpen, setIsOpen, program }): JSX.Element {
-  const currentClickedProgramm = state.find((el):{} => el.description === program.description);
-  let subtitle;
+interface ModalWindowProps {
+  modalIsOpen: boolean,
+  setIsOpen: Dispatch<SetStateAction<boolean>>
+  program: Price,
+}
+
+export default function ModalWindow({ modalIsOpen, setIsOpen, program }
+  : ModalWindowProps): JSX.Element {
+  const currentClickedProgramm = state.find((el) => el.description === program.description);
+  let subtitle:any;
 
   const customStyles = {
     content: {
@@ -21,11 +30,11 @@ export default function ModalWindow({ modalIsOpen, setIsOpen, program }): JSX.El
     },
   };
 
-  function afterOpenModal():void {
+  function afterOpenModal(): void {
     subtitle.style.color = '#f00';
   }
 
-  function closeModal():void {
+  function closeModal(): void {
     setIsOpen(false);
   }
 

@@ -5,12 +5,20 @@ import styles from './priceBox.module.css';
 import ModalWindow from '../ModalWindow/ModalWindow';
 
 import featureAnimation from '../Animation/Animation';
+import Price from './types/price';
 
 export default function PriceBox():JSX.Element {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const [program, setProgram] = useState({});
+  const [program, setProgram] = useState<Price>({
+    id: 0,
+    description: '',
+    price: 0,
+    discountPrice: 0,
+    saloonPrice: 0,
+    discSalonPrice: 0,
+  });
 
-  const [price, setPrice] = useState([
+  const price:Price[] = ([
     {
       id: 1,
       description: 'ЭКСПРЕСС',
@@ -49,7 +57,7 @@ export default function PriceBox():JSX.Element {
     }
   ]);
 
-  function openModal(el):void {
+  function openModal(el: Price): void {
     setProgram(el);
     setIsOpen(true);
   }
